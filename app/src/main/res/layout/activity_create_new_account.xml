@@ -11,12 +11,13 @@
         android:src="@drawable/fondo" />
 
     <Button
+        android:id="@+id/atras"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
         android:layout_marginEnd="@dimen/margin_small"
         android:layout_marginRight="@dimen/margin_small"
         android:background="@drawable/bkg_ground"
@@ -57,14 +58,14 @@
             android:gravity="center_vertical">
 
             <TextView
-                android:layout_width="71dp"
+                android:layout_width="65dp"
                 android:layout_height="wrap_content"
                 android:text="@string/NuevoUsuario"
                 android:textColor="@color/colorBlack"
-                android:textSize="15sp" />
+                android:textSize="18dp" />
 
             <EditText
-                android:id="@+id/Nuevousuario"
+                android:id="@+id/nombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_small"
@@ -82,14 +83,14 @@
             android:gravity="center_vertical">
 
             <TextView
-                android:layout_width="60dp"
+                android:layout_width="65dp"
                 android:layout_height="wrap_content"
                 android:text="@string/Cuenta"
                 android:textColor="@color/colorBlack"
                 android:textSize="18sp"/>
 
             <EditText
-                android:id="@+id/Mail"
+                android:id="@+id/mail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_small"
@@ -121,7 +122,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/Crear"
+            android:id="@+id/crear"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
