@@ -22,8 +22,8 @@ public class LoginActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_login);
 
-        loginButton = findViewById(R.id.newSesion);
-        createNewAccount = findViewById(R.id.ingresar);
+        loginButton = findViewById(R.id.ingresar);
+        createNewAccount = findViewById(R.id.newSesion);
         editTextUsername = findViewById(R.id.usuario);
         editTextPassword = findViewById(R.id.contraseña);
         progressBar = findViewById(R.id.progressBar);
@@ -33,7 +33,8 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 progressBar.setVisibility(View.VISIBLE);
 
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                final Intent intent;
+                intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
 
                 Usuario user = new Usuario(editTextUsername.getText().toString(), editTextPassword.getText().toString());
@@ -46,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 progressBar.setVisibility(View.VISIBLE);
 
-                Intent intent = new Intent(LoginActivity.this, NewAcountActivity.class);
+                Intent intent = new Intent(LoginActivity.this, NewAccountActivity.class);
                 startActivity(intent);
             }
         });

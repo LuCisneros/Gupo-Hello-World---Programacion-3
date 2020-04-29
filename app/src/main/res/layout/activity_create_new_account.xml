@@ -21,7 +21,7 @@
         android:layout_marginEnd="@dimen/margin_small"
         android:layout_marginRight="@dimen/margin_small"
         android:background="@drawable/bkg_ground"
-        android:text="@string/Atras"
+        android:text="@string/atras"
         android:textColor="@color/colorPrimary"
         android:textSize="15sp"
         android:textStyle="bold"/>
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_gravity="center"
-            android:text="@string/CrearCuenta"
+            android:text="@string/crearCuenta"
             android:textStyle="bold"
             android:textSize="20sp"
             android:textColor="@color/colorBlack"/>
@@ -60,7 +60,7 @@
             <TextView
                 android:layout_width="65dp"
                 android:layout_height="wrap_content"
-                android:text="@string/NuevoUsuario"
+                android:text="@string/nuevoUsuario"
                 android:textColor="@color/colorBlack"
                 android:textSize="18dp" />
 
@@ -85,7 +85,7 @@
             <TextView
                 android:layout_width="65dp"
                 android:layout_height="wrap_content"
-                android:text="@string/Cuenta"
+                android:text="@string/cuenta"
                 android:textColor="@color/colorBlack"
                 android:textSize="18sp"/>
 
@@ -127,7 +127,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/bkg_ground"
-            android:text="@string/Crear"
+            android:text="@string/crear"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold" />

@@ -9,7 +9,7 @@ import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class NewAcountActivity extends AppCompatActivity {
+public class NewAccountActivity extends AppCompatActivity {
 
     Button back;
     Button create;
@@ -35,7 +35,7 @@ public class NewAcountActivity extends AppCompatActivity {
             public void onClick(View v) {
                 progressBar.setVisibility(View.VISIBLE);
 
-                Intent intent = new Intent(NewAcountActivity.this, LoginActivity.class);
+                Intent intent = new Intent(NewAccountActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
@@ -45,7 +45,7 @@ public class NewAcountActivity extends AppCompatActivity {
             public void onClick(View v) {
                 progressBar.setVisibility(View.VISIBLE);
 
-                Intent intent = new Intent(NewAcountActivity.this, MainActivity.class);
+                Intent intent = new Intent(NewAccountActivity.this, MainActivity.class);
                 startActivity(intent);
 
                 Usuario user = new Usuario(nombre.getText().toString(), contraseña.getText().toString());

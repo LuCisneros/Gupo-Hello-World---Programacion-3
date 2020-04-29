@@ -6,13 +6,14 @@
     <string name="contraseña">Contraseña</string>
     <string name="login">Ingresar</string>
     <string name="escritura">Escriba aquí</string>
-    <string name="Atras">Atras</string>
-    <string name="CrearCuenta">Nueva sesión</string>
-    <string name="Cuenta">Mail</string>
-    <string name="NuevoUsuario">Nombre</string>
-    <string name="Crear">Crear</string>
+    <string name="atras">Atras</string>
+    <string name="crearCuenta">Nueva sesión</string>
+    <string name="cuenta">Mail</string>
+    <string name="nuevoUsuario">Nombre</string>
+    <string name="crear">Crear</string>
     <string name="busqueda">Busque el producto</string>
-
+    <string name="menu">Menú</string>
+    <string name="destacados">Destacados</string>
 
 
 </resources>

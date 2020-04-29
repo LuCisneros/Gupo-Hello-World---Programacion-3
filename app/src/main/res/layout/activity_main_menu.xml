@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="#21599C"
+            android:textStyle="bold"
+            android:background="@color/colorWhite"
+            android:textSize="12dp"
+            android:text="@string/menu" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="150dp"
+            android:textColor="#21599C"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="@string/destacados" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSearch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-35dp"
+            android:layout_marginLeft="350dp"
+            android:background="#FFFFFF"
+            android:src="@android:drawable/ic_menu_search" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+        android:layout_width="409dp"
+        android:layout_height="230dp"
+
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="280dp"
+        android:src="@drawable/imagesprin" />
+
+
+            <FrameLayout
+                android:layout_width="190dp"
+                android:layout_height="280dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="-275dp"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/imagesprod" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#21599C"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="Verduras/Frutas" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonFlecha"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginLeft="150dp"
+                    android:src="@drawable/ic_launcher" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="190dp"
+                android:layout_height="280dp"
+                android:layout_marginLeft="205dp"
+                android:layout_marginTop="-280dp"
+                android:background="#FFFFFF">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lacteos_f" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#21599C"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="Lacteos" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonFlecha2"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginLeft="150dp"
+                    android:src="@drawable/ic_launcher" />
+
+
+
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="190dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="205dp"
+                android:background="#FFFFFF"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/images_carne1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#21599C"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="Carnes" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonFlecha3"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginLeft="150dp"
+                    android:src="@drawable/ic_launcher" />
+
+
+
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="190dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="-280dp"
+                android:layout_marginLeft="8dp"
+                android:background="#FFFFFF"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/images_pane" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#21599C"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="Panaderia" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonFlecha4"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginLeft="150dp"
+                    android:src="@drawable/ic_launcher" />
+
+
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="190dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:background="#FFFFFF"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/images_dul1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#21599C"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="Dulces" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonFlecha5"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginLeft="150dp"
+                    android:src="@drawable/ic_launcher" />
+
+
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="190dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="-280dp"
+                android:layout_marginLeft="205dp"
+                android:background="#FFFFFF"
+             >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/images_limpieza" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#21599C"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:text="Productos de Limpieza" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonFlecha6"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginLeft="150dp"
+                    android:src="@drawable/ic_launcher" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
+
+
