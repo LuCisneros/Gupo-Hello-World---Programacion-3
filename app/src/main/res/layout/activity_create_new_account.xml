@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
@@ -13,17 +14,17 @@
     <Button
         android:id="@+id/atras"
         android:layout_width="wrap_content"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_small"
         android:layout_marginEnd="@dimen/margin_small"
-        android:layout_marginRight="@dimen/margin_small"
+        android:scaleType="centerCrop"
         android:background="@drawable/bkg_ground"
         android:text="@string/atras"
         android:textColor="@color/colorPrimary"
-        android:textSize="15sp"
+        android:textSize="18sp"
         android:textStyle="bold"/>
 
     <LinearLayout
@@ -31,29 +32,36 @@
         android:layout_height="match_parent"
         android:layout_marginTop="80dp"
         android:orientation="vertical"
-        android:padding="40dp">
+        android:padding="20dp">
 
         <ImageView
             android:layout_width="120dp"
             android:layout_height="110dp"
-            android:layout_marginBottom="20dp"
             android:layout_gravity="center"
             android:tint="@color/colorRed"
             android:src="@drawable/logo2" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_gravity="center"
             android:text="@string/crearCuenta"
             android:textStyle="bold"
             android:textSize="20sp"
             android:textColor="@color/colorBlack"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="20dp"
             android:orientation="horizontal"
             android:gravity="center_vertical">
 
@@ -98,6 +106,7 @@
                 android:inputType="text"
                 android:layout_marginLeft="@dimen/margin_small" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -121,6 +130,11 @@
                 android:inputType="textPassword"  />
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
         <Button
             android:id="@+id/crear"
             android:layout_width="140dp"
@@ -132,6 +146,11 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
         <ProgressBar
             android:id="@+id/progressBar"
             android:layout_marginTop="20dp"
@@ -141,6 +160,11 @@
             android:indeterminate="true"
             android:visibility="invisible"
             tools:visibility="visible"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
     </LinearLayout>
 
 </RelativeLayout>
