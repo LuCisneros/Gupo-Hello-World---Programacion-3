@@ -14,6 +14,9 @@
     <string name="busqueda">Busque el producto</string>
     <string name="menu">Menú</string>
     <string name="destacados">Destacados</string>
-
+    <string name="configurations">Configuración</string>
+    <string name="cambiarCuenta">Cambiar de cuenta</string>
+    <string name="cuentaNueva">Crear una cuenta nueva</string>
+    <string name="cerrarSesion">Cerrar sesión</string>
 
 </resources>
