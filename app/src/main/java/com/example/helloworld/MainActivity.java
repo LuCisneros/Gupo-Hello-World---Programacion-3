@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         listaProductos.add(new Product("Paquete de pan, 5 unidades", R.drawable.images_pane, 6 ));
         listaProductos.add(new Product("Carne 1kg", R.drawable.images_carne1, 45 ));
         listaProductos.add(new Product("Bolsa de dulces", R.drawable.images_dul1, 17 ));
-
+        listaProductos.add(new Product("Leche", R.drawable.lacteos_f, 6 ));
 
         ProductsRecyclerAdapter adapter = new ProductsRecyclerAdapter(this, listaProductos);
         adapter.setOnItemClickListener(new OnItemClickListener() {
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        recyclerViewProductos.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
+        recyclerViewProductos.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         recyclerViewProductos.setAdapter(adapter);
     }
 }

@@ -23,22 +23,30 @@
         android:textSize="20sp"
         tools:text="Carne"/>
 
-    <TextView
+        <TextView
         android:id="@+id/tvProductPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_marginRight="40dp"
+        android:layout_marginRight="20dp"
         android:textSize="20sp"
-        tools:text="Bs. 30"/>
+        tools:text="30"/>
 
-    <ImageButton
-        android:id="@+id/ibDelete"
-        android:src="@drawable/basurero"
-        android:tint="@color/colorRed"
-        android:background="?attr/selectableItemBackground"
-        android:layout_width="30dp"
-        android:layout_gravity="center_vertical"
-        android:layout_height="30dp"
-        android:layout_marginRight="@dimen/margin_small" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            android:textSize="20sp"
+            android:text="Bs."/>
+
+        <ImageButton
+            android:id="@+id/ibDelete"
+            android:src="@drawable/basurero"
+            android:tint="@color/colorRed"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/margin_small" />
 </LinearLayout>

@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".CarritoDeComprasActivity"/>
         <activity android:name=".ConfigurationActivity"/>
         <activity android:name=".SearchActivity"/>
         <activity android:name=".ProductsActivity"/>

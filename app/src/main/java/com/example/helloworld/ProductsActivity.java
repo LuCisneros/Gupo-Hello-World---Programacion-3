@@ -30,7 +30,7 @@ public class ProductsActivity extends AppCompatActivity {
 
         final Product producto;
         precio = findViewById(R.id.precio);
-        nombre = findViewById(R.id.nombre);
+        nombre = findViewById(R.id.nombreProducto);
         productimage = findViewById(R.id.productoImagen);
         back_arrow = findViewById(R.id.backArrow2);
         carrito = findViewById(R.id.agregarAlCarrito);
@@ -40,7 +40,7 @@ public class ProductsActivity extends AppCompatActivity {
         if (intent.hasExtra("producto")) {
             producto = (Product) intent.getSerializableExtra("producto");
             nombre.setText(producto.getName());
-            precio.setText(producto.getPrice());
+            precio.setText(String.valueOf(producto.getPrice()));
             productimage.setImageResource(producto.getImage());
 
 

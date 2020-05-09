@@ -75,7 +75,7 @@ public class ShoppingCartRecyclerAdapter extends RecyclerView.Adapter<ShoppingCa
         public void onBind(Product product) {
             textViewName.setText(product.getName());
             imageView.setImageResource(product.getImage());
-            textViewPrice.setText(product.getPrice());
+            textViewPrice.setText(String.valueOf(product.getPrice()));
         }
     }
 }

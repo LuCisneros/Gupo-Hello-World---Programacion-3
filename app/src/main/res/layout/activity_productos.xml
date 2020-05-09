@@ -77,11 +77,18 @@
                 android:text="@string/precio"/>
 
             <TextView
-                android:id="@+id/precio"
+            android:id="@+id/precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:textSize="20dp"/>
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_small"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:text="Bs."/>
 
         </LinearLayout>
 

@@ -22,7 +22,7 @@ public class CartSharedPreferencesManager {
         ArrayList<Product> currentProducts = getProducts();
         currentProducts.add(product);
         writeToSharedPreferences(currentProducts);
-        Toast.makeText(context, "Producto agregado al carrito correctamente", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Producto agregado al carrito", Toast.LENGTH_SHORT).show();
     }
 
     public ArrayList<Product> getProducts() {
@@ -52,7 +52,7 @@ public class CartSharedPreferencesManager {
         }
 
         writeToSharedPreferences(products);
-        Toast.makeText(context, "Producto eliminado del carrito correctamente", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Producto eliminado del carrito", Toast.LENGTH_SHORT).show();
     }
 
     public void writeToSharedPreferences(ArrayList<Product> products) {

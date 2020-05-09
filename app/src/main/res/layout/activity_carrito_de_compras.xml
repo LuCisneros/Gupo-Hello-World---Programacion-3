@@ -45,15 +45,6 @@
                 android:layout_gravity="center"
                 android:text="@string/carritoDeCompras" />
 
-            <ImageButton
-                android:id="@+id/imageButtonSearch"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="75dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/search_2"
-                android:tint="@color/colorBlue"/>
-
         </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
