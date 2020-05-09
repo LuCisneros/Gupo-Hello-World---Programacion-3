@@ -19,9 +19,10 @@
     <string name="cuentaNueva">Crear una cuenta nueva</string>
     <string name="cerrarSesion">Cerrar sesión</string>
     <string name="precio">Precio:</string>
-    <string name="marca">Marca:</string>
+    <string name="nombreProducto">Producto:</string>
     <string name="cantidad">Cantidad</string>
     <string name="agregarAlCarrito">Agregar al carrito de compras</string>
-
+    <string name="carritoDeCompras">Carrito de compras</string>
+    <string name="comprar">Comprar</string>
 
 </resources>

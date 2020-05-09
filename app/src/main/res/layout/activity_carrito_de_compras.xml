@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
+    tools:context=".CarritoDeComprasActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -24,51 +25,54 @@
             android:orientation="horizontal">
 
 
-            <Button
-                android:id="@+id/menu"
+            <ImageButton
+                android:id="@+id/addProducts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:textColor="@color/colorBlue"
-                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:textSize="12dp"
-                android:text="@string/menu"/>
+                android:src="@drawable/add_icon"
+                android:tint="@color/colorBlue"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
                 android:textColor="@color/colorBlue"
+                android:layout_marginLeft="80dp"
                 android:textStyle="bold"
                 android:textSize="18dp"
-                android:text="@string/destacados"/>
+                android:layout_gravity="center"
+                android:text="@string/carritoDeCompras" />
 
             <ImageButton
                 android:id="@+id/imageButtonSearch"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginLeft="110dp"
+                android:layout_marginLeft="75dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/search_2"
                 android:tint="@color/colorBlue"/>
 
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="409dp"
-            android:layout_height="230dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="3dp"
-            android:src="@drawable/imagesprin"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvProductos"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/carritoDeCompras"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/realizarCompra"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/bkg_ground"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="@string/comprar"/>
+
 </FrameLayout>
-
-
