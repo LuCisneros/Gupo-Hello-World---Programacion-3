@@ -66,7 +66,7 @@ public class ProductsRecyclerAdapter extends RecyclerView.Adapter<ProductsRecycl
 
         public void onBind(Product producto) {
             textViewName.setText(producto.getName());
-            textViewPrice.setText(producto.getPrice());
+            textViewPrice.setText(String.valueOf(producto.getPrice()));
             imageView.setImageResource(producto.getImage());
         }
     }
