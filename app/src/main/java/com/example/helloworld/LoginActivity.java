@@ -57,5 +57,4 @@ public class LoginActivity extends AppCompatActivity {
         super.onRestart();
         progressBar.setVisibility(View.INVISIBLE);
     }
-
 }
