@@ -40,7 +40,7 @@ public class PagoActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 final Intent intent;
-                intent = new Intent(PagoActivity.this, MainActivity.class);
+                intent = new Intent(PagoActivity.this, UbicacionActivity.class);
                 startActivity(intent);
             }
         });
