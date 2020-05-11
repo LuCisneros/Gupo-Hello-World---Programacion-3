@@ -37,11 +37,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="90dp"
+                android:layout_marginLeft="85dp"
                 android:textColor="@color/colorBlue"
                 android:textStyle="bold"
                 android:textSize="18dp"
-                android:text="@string/Bebidas"/>
+                android:text="@string/bebidas"/>
 
             <ImageButton
                 android:id="@+id/imageButtonSearch"
@@ -56,7 +56,8 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="280dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
             android:layout_marginTop="3dp"
             android:layout_marginBottom="4dp"
             android:src="@drawable/image_bebidas"/>

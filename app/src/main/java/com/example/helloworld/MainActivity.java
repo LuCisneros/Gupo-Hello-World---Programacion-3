@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 final Intent intent;
-                intent = new Intent(MainActivity.this, CandyActivity.class);
+                intent = new Intent(MainActivity.this, DrinksActivity.class);
                 startActivity(intent);
             }
         });
