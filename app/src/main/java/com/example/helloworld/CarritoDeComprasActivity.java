@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -52,6 +53,23 @@ public class CarritoDeComprasActivity extends AppCompatActivity {
                 final Intent intent;
                 intent = new Intent(CarritoDeComprasActivity.this, MainActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        comprar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                int total = cartSharedPreferencesManager.getTotal();
+
+                if (total == 0){
+                    Toast.makeText(CarritoDeComprasActivity.this, "El carrito está vacio", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    final Intent intent;
+                    intent = new Intent(CarritoDeComprasActivity.this, PagoActivity.class);
+                    startActivity(intent);
+                }
             }
         });
     }

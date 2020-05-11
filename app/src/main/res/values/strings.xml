@@ -26,7 +26,12 @@
     <string name="comprar">Comprar</string>
     <string name="Carnes">Carnes</string>
     <string name="Dulcesyotros">Dulces y otros</string>
-
-
+    <string name="pago">Pago</string>
+    <string name="realizarCompra">Realizar</string>
+    <string name="precioTotal">Precio Total:</string>
+    <string name="factura">Ingrese sus datos para la factura:</string>
+    <string name="nit">NIT:</string>
+    <string name="nombreNit">Nombre:</string>
+    <string name="cash">El pago será realizado mediante cash</string>
 
 </resources>
