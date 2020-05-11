@@ -32,6 +32,6 @@
     <string name="factura">Ingrese sus datos para la factura:</string>
     <string name="nit">NIT:</string>
     <string name="nombreNit">Nombre:</string>
-    <string name="cash">El pago será realizado mediante cash</string>
+    <string name="cash">El pago será realizado en efectivo</string>
 
 </resources>

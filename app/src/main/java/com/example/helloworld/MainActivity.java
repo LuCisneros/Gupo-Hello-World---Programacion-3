@@ -14,7 +14,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    Usuario usuario;
     ArrayList<Product> listaProductos = new ArrayList<>();
     RecyclerView recyclerViewProductos;
     Button menu;
@@ -37,6 +36,16 @@ public class MainActivity extends AppCompatActivity {
 
                 final Intent intent;
                 intent = new Intent(MainActivity.this, SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                final Intent intent;
+                intent = new Intent(MainActivity.this, CandyActivity.class);
                 startActivity(intent);
             }
         });

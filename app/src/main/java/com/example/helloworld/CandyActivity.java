@@ -14,7 +14,6 @@ import java.util.ArrayList;
 
 public class CandyActivity extends AppCompatActivity  {
 
-        Usuario usuario;
         ArrayList<Product> listaProductos = new ArrayList<>();
         RecyclerView recyclerViewProductos;
         Button menu;
@@ -25,7 +24,7 @@ public class CandyActivity extends AppCompatActivity  {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
 
-            setContentView(R.layout.activity_main_menu);
+            setContentView(R.layout.activity_candy);
 
             recyclerViewProductos = findViewById(R.id.CandyProductos);
             menu = findViewById(R.id.menu);

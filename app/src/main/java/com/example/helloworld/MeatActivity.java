@@ -14,7 +14,6 @@ import java.util.ArrayList;
 
 public class MeatActivity extends AppCompatActivity {
 
-        Usuario usuario;
         ArrayList<Product> listaProductos = new ArrayList<>();
         RecyclerView recyclerViewProductos;
         Button menu;
@@ -25,7 +24,7 @@ public class MeatActivity extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
 
-            setContentView(R.layout.activity_main_menu);
+            setContentView(R.layout.activity_meats);
 
             recyclerViewProductos = findViewById(R.id.MeatProductos);
             menu = findViewById(R.id.menu);
@@ -36,7 +35,7 @@ public class MeatActivity extends AppCompatActivity {
                 public void onClick(View view) {
 
                     final Intent intent;
-                    intent = new Intent(com.example.helloworld.MeatActivity.this, SearchActivity.class);
+                    intent = new Intent(MeatActivity.this, SearchActivity.class);
                     startActivity(intent);
                 }
             });
@@ -47,11 +46,11 @@ public class MeatActivity extends AppCompatActivity {
             listaProductos.add(new Product("Costilla de Res, 1kg", R.drawable.image_meat_costilla, 30 ));
             listaProductos.add(new Product("Filete de Pollo,1 kg", R.drawable.image_meat_filetedepollo, 38 ));
             listaProductos.add(new Product("Huevos, 30 unidades", R.drawable.image_meat_huevos, 18));
-            listaProductos.add(new Product("Molida Especial,1kg", R.drawable.image_candy_mogul, 37));
+            listaProductos.add(new Product("Molida Especial,1kg", R.drawable.image_meat_molida, 37));
             listaProductos.add(new Product("Pollo Relleno", R.drawable.image_meat_pollorelleno, 32));
             listaProductos.add(new Product("Pollo Entero, 1kg", R.drawable.image_meat_pollo, 17 ));
-            listaProductos.add(new Product("Tira,1Kg", R.drawable.image_papas, 39 ));
-            listaProductos.add(new Product("Trucha, 1Kg", R.drawable.pipocas, 45));
+            listaProductos.add(new Product("Tira,1Kg", R.drawable.image_meat_tira, 39 ));
+            listaProductos.add(new Product("Trucha, 1Kg", R.drawable.image_meat_trucha, 45));
             listaProductos.add(new Product("Muslos de Pollo, 700gr", R.drawable.muslos, 28));
 
 
