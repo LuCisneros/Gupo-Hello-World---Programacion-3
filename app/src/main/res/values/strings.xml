@@ -24,6 +24,7 @@
     <string name="agregarAlCarrito">Agregar al carrito de compras</string>
     <string name="carritoDeCompras">Carrito de compras</string>
     <string name="comprar">Comprar</string>
+    <string name="title_activity_maps">Map</string>
     <string name="Carnes">Carnes</string>
     <string name="Dulcesyotros">Dulces y otros</string>
     <string name="pago">Pago</string>
