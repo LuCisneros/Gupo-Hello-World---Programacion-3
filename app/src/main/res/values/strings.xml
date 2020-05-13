@@ -39,6 +39,7 @@
     <string name="ubicacion">Ubicación</string>
     <string name="ingreseUbicacion">Por favor ingrese la ubicación de destino de los productos</string>
     <string name="ingresarUbicacion">Ingresar Ubicación</string>
-
+    <string name="compraExitosa">Compra Exitosa</string>
+    <string name="irMenuPrincipal">Ir al menú principal</string>
 
 </resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarritoDeComprasActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="160dp"
+            android:layout_gravity="center"
+            android:src="@drawable/shopping_cart"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="italic"
+            android:textSize="35dp"
+            android:text="@string/compraExitosa"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/menuPrincipal"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/bkg_ground"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="@string/irMenuPrincipal"/>
+
+</FrameLayout>

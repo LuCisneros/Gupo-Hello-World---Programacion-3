@@ -40,6 +40,15 @@ public class MeatActivity extends AppCompatActivity {
                 }
             });
 
+            menu.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent intent = new Intent(MeatActivity.this, MenuActivity.class);
+                    startActivity(intent);
+                }
+            });
+
             listaProductos.add(new Product("Alas de Pollo", R.drawable.image_meat_alas, 32 ));
             listaProductos.add(new Product("Cabeza de Lomo, 1kg",R.drawable.image_meat_cabezadelomo, 52 ));
             listaProductos.add(new Product("Chuleta de Cerdo, 1kg", R.drawable.image_meat_chuleta, 28 ));

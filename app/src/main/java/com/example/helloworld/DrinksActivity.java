@@ -40,6 +40,15 @@ public class DrinksActivity  extends AppCompatActivity {
                 }
             });
 
+            menu.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent intent = new Intent(DrinksActivity.this, MenuActivity.class);
+                    startActivity(intent);
+                }
+            });
+
             listaProductos.add(new Product("Ades Frutilla, 200ml", R.drawable.image_ades, 4 ));
             listaProductos.add(new Product("Cerveza Becks",R.drawable.image_beck, 7 ));
             listaProductos.add(new Product("Canada Dry", R.drawable.image_canadadry, 8 ));

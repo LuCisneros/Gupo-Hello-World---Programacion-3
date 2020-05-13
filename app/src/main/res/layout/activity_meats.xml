@@ -55,12 +55,12 @@
         </LinearLayout>
 
         <ImageView
-            android:layout_width="409dp"
+            android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
             android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
-            android:src="@drawable/carnes"/>
+            android:src="@drawable/carne"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/MeatProductos"

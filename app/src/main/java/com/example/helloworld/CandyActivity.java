@@ -40,6 +40,15 @@ public class CandyActivity extends AppCompatActivity  {
                 }
             });
 
+            menu.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent intent = new Intent(CandyActivity.this, MenuActivity.class);
+                    startActivity(intent);
+                }
+            });
+
             listaProductos.add(new Product("Doritos, 400 gr", R.drawable.doritos, 8 ));
             listaProductos.add(new Product("Frac,6 unidades",R.drawable.image_candy_frac, 45 ));
             listaProductos.add(new Product("After Eight", R.drawable.after, 55 ));

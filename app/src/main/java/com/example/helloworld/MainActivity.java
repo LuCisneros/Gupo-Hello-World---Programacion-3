@@ -44,15 +44,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                final Intent intent;
-                intent = new Intent(MainActivity.this, DrinksActivity.class);
+                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
                 startActivity(intent);
             }
         });
 
+        listaProductos.add(new Product("Nescafé Tradición", R.drawable.nescafe, 35 ));
+        listaProductos.add(new Product("Aceite de oliva", R.drawable.aceite_oliva, 28 ));
         listaProductos.add(new Product("Pan francés, 2 unidades", R.drawable.pan_frances, 6 ));
         listaProductos.add(new Product("Pan sarnita, 5 unidades", R.drawable.pan_sarnita, 7 ));
-        listaProductos.add(new Product("Nescafé Tradición", R.drawable.nescafe, 35 ));
+        listaProductos.add(new Product("Aceite Fino", R.drawable.aceite_fino, 11 ));
         listaProductos.add(new Product("Té Windsor", R.drawable.te, 4 ));
         listaProductos.add(new Product("Té Windsor caja grande", R.drawable.te_caja, 16 ));
         listaProductos.add(new Product("Mate de Manzanilla Windsor", R.drawable.mate_manzanilla, 14 ));
@@ -63,11 +64,9 @@ public class MainActivity extends AppCompatActivity {
         listaProductos.add(new Product("Leche chocolatada Pil", R.drawable.lechechoc, 8 ));
         listaProductos.add(new Product("Leche en polvo Pil", R.drawable.leche_polvo, 34 ));
         listaProductos.add(new Product("Leche en polvo Pil - Lata", R.drawable.leche_polvo_lata, 64 ));
-        listaProductos.add(new Product("Aceite Fino", R.drawable.aceite_fino, 11 ));
-        listaProductos.add(new Product("Aceite de oliva", R.drawable.aceite_oliva, 28 ));
-        listaProductos.add(new Product("Arros Caisy Favorito", R.drawable.arroz_caisy_favorito, 10 ));
-        listaProductos.add(new Product("Arros Caisy Super Económico", R.drawable.arroz_caisy_supereconomico, 7 ));
-        listaProductos.add(new Product("Arros Caisy Grano de oro", R.drawable.arroz_grano_de_oro, 12 ));
+        listaProductos.add(new Product("Arroz Caisy Favorito", R.drawable.arroz_caisy_favorito, 10 ));
+        listaProductos.add(new Product("Arroz Caisy Super Económico", R.drawable.arroz_caisy_supereconomico, 7 ));
+        listaProductos.add(new Product("Arroz Caisy Grano de oro", R.drawable.arroz_grano_de_oro, 12 ));
 
 
 
