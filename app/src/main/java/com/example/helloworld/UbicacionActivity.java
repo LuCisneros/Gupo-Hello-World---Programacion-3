@@ -35,7 +35,7 @@ public class UbicacionActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(UbicacionActivity.this, MainActivity.class);
+                Intent intent = new Intent(UbicacionActivity.this, MapsActivity.class);
                 startActivity(intent);
             }
         });
