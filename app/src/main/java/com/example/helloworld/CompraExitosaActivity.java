@@ -12,7 +12,6 @@ public class CompraExitosaActivity extends AppCompatActivity {
 
     Button irMenu;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,4 +30,5 @@ public class CompraExitosaActivity extends AppCompatActivity {
             }
         });
     }
+
 }

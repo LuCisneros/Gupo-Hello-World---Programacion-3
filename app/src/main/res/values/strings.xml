@@ -41,5 +41,6 @@
     <string name="ingresarUbicacion">Ingresar Ubicación</string>
     <string name="compraExitosa">Compra Exitosa</string>
     <string name="irMenuPrincipal">Ir al menú principal</string>
+    <string name="proceso">En proceso...</string>
 
 </resources>

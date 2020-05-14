@@ -20,6 +20,7 @@ public class CarritoDeComprasActivity extends AppCompatActivity {
 
     ImageButton addProducts;
     Button comprar;
+    Button compraRealizada;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +30,11 @@ public class CarritoDeComprasActivity extends AppCompatActivity {
         carritoDeCompras = findViewById(R.id.carritoDeCompras);
         addProducts = findViewById(R.id.addProducts);
         comprar = findViewById(R.id.realizarCompra);
+        compraRealizada = findViewById(R.id.ubicacion);
 
         cartSharedPreferencesManager = new CartSharedPreferencesManager(this);
 
-        ArrayList<Product> products = cartSharedPreferencesManager.getProducts();
+        final ArrayList<Product> products = cartSharedPreferencesManager.getProducts();
         final ShoppingCartRecyclerAdapter adapter = new ShoppingCartRecyclerAdapter(this, products);
 
         adapter.setOnShoppingCartClickListener(new OnShoppingCartClickListener() {
