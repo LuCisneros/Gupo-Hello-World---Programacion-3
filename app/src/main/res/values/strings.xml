@@ -42,5 +42,7 @@
     <string name="compraExitosa">Compra Exitosa</string>
     <string name="irMenuPrincipal">Ir al menú principal</string>
     <string name="proceso">En proceso...</string>
+    <string name="ArticulosdelHogar">Articulos del Hogar</string>
+    <string name="Lacteos">Productos Lacteos</string>
 
 </resources>
