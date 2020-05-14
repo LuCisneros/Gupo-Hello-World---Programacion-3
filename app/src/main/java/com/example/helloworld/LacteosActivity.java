@@ -24,7 +24,7 @@ public class LacteosActivity extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
 
-            setContentView(R.layout.activity_candy);
+            setContentView(R.layout.activity_lacteos);
 
             recyclerViewProductos = findViewById(R.id.LacteosProductos);
             menu = findViewById(R.id.menu);
