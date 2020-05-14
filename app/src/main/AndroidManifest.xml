@@ -33,6 +33,9 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"></activity>
 
+        <activity android:name=".MenuActivity"/>
+        <activity android:name=".ArticulosActivity"/>
+        <activity android:name=".LacteosActivity"/>
         <activity android:name=".CompraExitosaActivity"/>
         <activity android:name=".UbicacionActivity"/>
         <activity android:name=".DrinksActivity"/>

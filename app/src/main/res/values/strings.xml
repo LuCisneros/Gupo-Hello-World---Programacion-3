@@ -44,5 +44,6 @@
     <string name="proceso">En proceso...</string>
     <string name="ArticulosdelHogar">Articulos del Hogar</string>
     <string name="Lacteos">Productos Lacteos</string>
+    <string name="salir">Salir</string>
 
 </resources>
