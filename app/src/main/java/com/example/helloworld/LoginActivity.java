@@ -4,18 +4,29 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Switch;
+import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
     Button loginButton;
+    Switch adminSwitch;
     Button createNewAccount;
     EditText editTextUsername;
     EditText editTextPassword;
     ProgressBar progressBar;
+    CheckBox cbRememberMe;
+    int requestCodeIngresar = 1;
+
+    UserSharedPreferencesManager userSharedPreferencesManager;
+
+    @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,10 +34,12 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         loginButton = findViewById(R.id.ingresar);
+        adminSwitch = findViewById(R.id.switchAdmin);
         createNewAccount = findViewById(R.id.newSesion);
         editTextUsername = findViewById(R.id.usuario);
         editTextPassword = findViewById(R.id.contraseña);
         progressBar = findViewById(R.id.progressBar);
+        cbRememberMe = findViewById(R.id.cbRememberMe);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +64,15 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == requestCodeIngresar && resultCode == RESULT_OK && data != null) {
+            String nombre = data.getStringExtra("nombre");
+            Toast.makeText(this, nombre + " vuelva pronto!", Toast.LENGTH_SHORT).show();
+        }
     }
 
     protected void onRestart() {
